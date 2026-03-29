@@ -1,0 +1,603 @@
+<!doctype html>
+
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Luanda Business School | Excelência em Formação Executiva</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#091d2e",
+              "primary-container": "#e02923",
+              "on-tertiary-fixed-variant": "#504700",
+              "outline-variant": "#e6bdb7",
+              "on-tertiary-container": "#484000",
+              "tertiary-fixed": "#fee405",
+              "surface-variant": "#d1e4fb",
+              "surface-container": "#e3efff",
+              "on-primary-fixed": "#410001",
+              background: "#f7f9ff",
+              primary: "#bc000b",
+              "on-background": "#091d2e",
+              "on-secondary-fixed": "#002106",
+              "surface-tint": "#bf050e",
+              "secondary-container": "#80f98b",
+              "on-tertiary-fixed": "#201c00",
+              "inverse-primary": "#ffb4aa",
+              "on-primary-container": "#fffbff",
+              "tertiary-fixed-dim": "#dfc700",
+              "on-secondary-fixed-variant": "#00531a",
+              "secondary-fixed-dim": "#66df75",
+              "surface-container-high": "#d9eaff",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#83fc8e",
+              "inverse-on-surface": "#e8f2ff",
+              outline: "#916f6a",
+              "on-surface-variant": "#5d3f3c",
+              "on-primary": "#ffffff",
+              secondary: "#006e25",
+              "surface-bright": "#f7f9ff",
+              "surface-container-lowest": "#ffffff",
+              "error-container": "#ffdad6",
+              "primary-fixed-dim": "#ffb4aa",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              surface: "#f7f9ff",
+              "surface-container-highest": "#d1e4fb",
+              error: "#ba1a1a",
+              "surface-container-low": "#edf4ff",
+              "on-secondary-container": "#007327",
+              "inverse-surface": "#203243",
+              tertiary: "#6b5f00",
+              "tertiary-container": "#c0ac00",
+              "surface-dim": "#c9dcf3",
+              "primary-fixed": "#ffdad5",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#930006",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="public/css/index.css" />
+  </head>
+  <body class="bg-surface font-body text-on-surface">
+    <!-- Top Navigation Bar -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-full mt-4 mx-auto max-w-7xl w-[95%] shadow-[0_8px_32px_rgba(9,29,46,0.06)]"
+    >
+      <div class="flex items-center gap-2">
+        <span
+          class="text-xl font-black text-slate-900 dark:text-white uppercase tracking-tighter"
+          ><img src="public/img/logo_lbs.png" width="100px" alt="Logo LBS"
+        /></span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8">
+        <a
+          class="font-['Manrope'] font-bold tracking-tight text-sm text-red-700 dark:text-red-500 border-b-2 border-red-700 pb-1"
+          href="#"
+          >Início</a
+        >
+        <a
+          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
+          href="#"
+          >Cursos</a
+        >
+        <a
+          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
+          href="#"
+          >Consultoria</a
+        >
+        <a
+          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
+          href="#"
+          >Sobre Nós</a
+        >
+        <a
+          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
+          href="contactos.html"
+          >Contactos</a
+        >
+      </nav>
+      <button
+        class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-headline font-bold text-sm scale-95 active:scale-90 duration-200 shadow-lg shadow-primary/20"
+      >
+        Inscreva-se
+      </button>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center pt-24 overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"
+        ></div>
+        <img
+          alt="Luanda Business Environment"
+          class="w-full h-full object-cover"
+          data-alt="Modern high-rise architectural building in Luanda with clean glass reflections and clear blue sky in a professional business district"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGd0sleLFQuAWHLj5Z22WltydNOMdkZh2bPubS8rTMYJ7cacp9q5_Y156SSdg83E1fD2ISEVWLLwPd7HALl1HJ_jUFfB4hX0oKPvR40YYWL7xkXSaE6XoI8PVkziuLH5dz_-uIuyfWvLW4yjEm1cRG97rr8N3YrMq5n5vguUWpWW84gB-MCUHMD1V1nvtKyyUWbdsGrFBgMH5IzhCs7BIjz49w6Ds7vP4BQNnaE2IC3ryBnd2fdU7uf8DmeKufBodH5un8jsy4Sqe"
+        />
+      </div>
+      <div class="container mx-auto px-8 relative z-20">
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high mb-6"
+          >
+            <span
+              class="material-symbols-outlined text-primary text-sm"
+              data-icon="verified"
+              >verified</span
+            >
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-on-surface-variant font-label"
+              >Certificação INEFOP</span
+            >
+          </div>
+          <h1
+            class="text-6xl md:text-7xl font-headline font-extrabold tracking-tight text-on-surface mb-6 leading-[1.1]"
+          >
+            Lidere o <span class="text-gradient">Futuro</span> dos Negócios.
+          </h1>
+          <p
+            class="text-lg text-on-surface-variant mb-10 leading-relaxed max-w-lg"
+          >
+            A Luanda Business School transforma o potencial em excelência
+            através de formação executiva de padrão internacional adaptada ao
+            mercado angolano.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-white rounded-full font-headline font-bold shadow-xl shadow-primary/30 hover:scale-105 transition-transform duration-300"
+              href="https://wa.me/244975628176"
+            >
+              <span class="material-symbols-outlined" data-icon="chat"
+                >chat</span
+              >
+              Fale connosco
+            </a>
+            <a
+              class="inline-flex items-center gap-3 px-8 py-4 bg-surface-container-highest text-on-surface rounded-full font-headline font-bold hover:bg-surface-container-high transition-colors"
+              href="#cursos"
+            >
+              Ver cursos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Institutional Summary Bento -->
+    <section class="py-20 bg-surface">
+      <div class="container mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="md:col-span-2 bg-surface-container-low p-10 rounded-3xl flex flex-col justify-between"
+          >
+            <div>
+              <h2 class="text-3xl font-headline font-bold mb-4">
+                Compromisso com a Excelência
+              </h2>
+              <p class="text-on-surface-variant leading-relaxed mb-8">
+                Com anos de experiência no mercado angolano, a LBS consolidou-se
+                como o parceiro estratégico para o desenvolvimento de
+                competências críticas. Somos certificados pelo INEFOP,
+                garantindo o mais alto rigor académico e prático.
+              </p>
+            </div>
+            <div class="flex gap-12">
+              <div>
+                <span
+                  class="block text-4xl font-headline font-extrabold text-primary"
+                  >5+</span
+                >
+                <span
+                  class="text-sm font-label uppercase tracking-tighter text-on-surface-variant"
+                  >Anos de Experiência</span
+                >
+              </div>
+              <div>
+                <span
+                  class="block text-4xl font-headline font-extrabold text-secondary"
+                  >2.5k+</span
+                >
+                <span
+                  class="text-sm font-label uppercase tracking-tighter text-on-surface-variant"
+                  >Executivos Formados</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-10 rounded-3xl text-white relative overflow-hidden group"
+          >
+            <span
+              class="material-symbols-outlined absolute -right-4 -bottom-4 text-white/10 text-9xl transition-transform group-hover:scale-110"
+              data-icon="school"
+              >school</span
+            >
+            <h3 class="text-2xl font-headline font-bold mb-4 relative z-10">
+              Metodologia Prática
+            </h3>
+            <p class="text-white/80 relative z-10 font-body">
+              Focamos no desenvolvimento de competências aplicáveis ao dia-a-dia
+              organizacional, aliando teoria internacional à realidade local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Courses -->
+    <section class="py-24 bg-surface-container-low" id="cursos">
+      <div class="container mx-auto px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
+        >
+          <div>
+            <h2
+              class="text-4xl font-headline font-extrabold tracking-tight mb-4"
+            >
+              Programas em Destaque
+            </h2>
+            <p class="text-on-surface-variant max-w-xl">
+              Explore as nossas áreas de especialização concebidas para elevar a
+              sua carreira ao próximo nível.
+            </p>
+          </div>
+          <a
+            class="text-primary font-headline font-bold flex items-center gap-2 group"
+            href="#"
+          >
+            Todos os cursos
+            <span
+              class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+              data-icon="arrow_forward"
+              >arrow_forward</span
+            >
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Course 1 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-500 flex flex-col group border-l-4 border-primary"
+          >
+            <div
+              class="mb-6 bg-surface-container rounded-2xl w-14 h-14 flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-3xl"
+                data-icon="leaderboard"
+                >leaderboard</span
+              >
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">
+              Liderança e Estratégia
+            </h3>
+            <p
+              class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow"
+            >
+              Desenvolva uma visão estratégica e aprenda a liderar equipas de
+              alto desempenho em contextos de incerteza e mudança constante.
+            </p>
+            <button
+              class="w-full py-4 bg-surface-container-low text-on-surface font-headline font-bold rounded-xl group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center gap-2"
+            >
+              Saber mais
+            </button>
+          </div>
+          <!-- Course 2 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-500 flex flex-col group border-l-4 border-secondary"
+          >
+            <div
+              class="mb-6 bg-surface-container rounded-2xl w-14 h-14 flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-secondary text-3xl"
+                data-icon="account_balance"
+                >account_balance</span
+              >
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">
+              Finanças Corporativas
+            </h3>
+            <p
+              class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow"
+            >
+              Domine a análise financeira, gestão de tesouraria e avaliação de
+              investimentos para fundamentar decisões empresariais críticas.
+            </p>
+            <button
+              class="w-full py-4 bg-surface-container-low text-on-surface font-headline font-bold rounded-xl group-hover:bg-secondary group-hover:text-white transition-colors flex items-center justify-center gap-2"
+            >
+              Saber mais
+            </button>
+          </div>
+          <!-- Course 3 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-500 flex flex-col group border-l-4 border-tertiary"
+          >
+            <div
+              class="mb-6 bg-surface-container rounded-2xl w-14 h-14 flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-tertiary text-3xl"
+                data-icon="groups"
+                >groups</span
+              >
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">
+              Recursos Humanos
+            </h3>
+            <p
+              class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow"
+            >
+              Aprenda a gerir o talento humano como o activo mais valioso da
+              organização, desde o recrutamento estratégico à retenção.
+            </p>
+            <button
+              class="w-full py-4 bg-surface-container-low text-on-surface font-headline font-bold rounded-xl group-hover:bg-tertiary group-hover:text-white transition-colors flex items-center justify-center gap-2"
+            >
+              Saber mais
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why LBS -->
+    <section class="py-24 bg-surface relative overflow-hidden">
+      <div class="container mx-auto px-8 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-headline font-extrabold tracking-tight mb-4">
+            Porquê escolher a LBS?
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-4xl"
+                data-icon="award_star"
+                data-weight="fill"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >award_star</span
+              >
+            </div>
+            <h4 class="text-lg font-headline font-bold mb-2">Excelência</h4>
+            <p class="text-sm text-on-surface-variant">
+              Padrões académicos de topo para assegurar o seu sucesso
+              profissional.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span
+                class="material-symbols-outlined text-secondary text-4xl"
+                data-icon="trending_up"
+                >trending_up</span
+              >
+            </div>
+            <h4 class="text-lg font-headline font-bold mb-2">Liderança</h4>
+            <p class="text-sm text-on-surface-variant">
+              Fomentamos o espírito empreendedor e a capacidade de influenciar
+              positivamente.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-tertiary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span
+                class="material-symbols-outlined text-tertiary text-4xl"
+                data-icon="lightbulb"
+                >lightbulb</span
+              >
+            </div>
+            <h4 class="text-lg font-headline font-bold mb-2">Inovação</h4>
+            <p class="text-sm text-on-surface-variant">
+              Ferramentas e metodologias disruptivas adaptadas às novas
+              economias.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-blue-600/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span
+                class="material-symbols-outlined text-blue-600 text-4xl"
+                data-icon="psychology"
+                >psychology</span
+              >
+            </div>
+            <h4 class="text-lg font-headline font-bold mb-2">Praticidade</h4>
+            <p class="text-sm text-on-surface-variant">
+              Aprendizagem orientada para resultados imediatos na sua
+              organização.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners Section -->
+    <section class="py-20 bg-surface-container-high/30">
+      <div class="container mx-auto px-8">
+        <p
+          class="text-center text-xs font-label font-bold uppercase tracking-[0.3em] text-on-surface-variant/60 mb-12"
+        >
+          Os Nossos Parceiros e Marcas
+        </p>
+        <div
+          class="flex flex-wrap justify-center items-center gap-16 md:gap-24 opacity-70 grayscale hover:grayscale-0 transition-all duration-700"
+        >
+          <img
+            alt="LBS Logo"
+            class="h-14 object-contain"
+            data-alt="Luanda Business School LBS Logo with professional branding elements"
+            src="public/img/logo_lbs.png"
+          />
+          <img
+            alt="UOR Logo"
+            class="h-16 object-contain"
+            data-alt="Universidade Oscar Ribas UOR Logo"
+            src="public/img/Logo_UOR.png"
+          />
+          <img
+            alt="CEGOC Logo"
+            class="h-10 object-contain"
+            data-alt="CEGOC International Training Partners Logo"
+            src="public/img/logo-cegoc.png"
+          />
+          <img
+            alt="NMI Logo"
+            class="h-12 object-contain"
+            data-alt="Narciso de Moreira Investimentos corporate logo"
+            src="public/img/logo_inv.png"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-slate-100 dark:bg-slate-950">
+      <div class="bg-slate-200 dark:bg-slate-800 h-px w-full"></div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto font-['Inter'] text-sm leading-relaxed"
+      >
+        <div class="flex flex-col gap-6">
+          <span class="text-lg font-bold text-slate-900 dark:text-white"
+            ><img src="public/img/logo_lbs.png" width="200px" alt="Logo LBS"
+          /></span>
+          <p class="text-slate-500 dark:text-slate-400">
+            Excelência na formação de executivos em Angola, transformando o
+            futuro das organizações.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4
+            class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs"
+          >
+            Localização
+          </h4>
+          <p class="text-slate-500 dark:text-slate-400">
+            Campus Universitário Óscar Ribas 4.º Andar, Talatona – Luanda
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4
+            class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs"
+          >
+            Contactos
+          </h4>
+          <a
+            class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity"
+            href="tel:+244955504890"
+            >Tel: +244 955 504 890</a
+          >
+          <a
+            class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity"
+            href="https://wa.me/244975628176"
+            >WhatsApp: +244 975 628 176</a
+          >
+          <a
+            class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity underline underline-offset-4 decoration-red-500"
+            href="mailto:info@lbs.co.ao"
+            >Email: info@lbs.co.ao</a
+          >
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4
+            class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs"
+          >
+            Parceiros
+          </h4>
+          <div
+            class="grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500 dark:text-slate-400"
+          >
+            <span class="opacity-80 hover:opacity-100 transition-opacity"
+              ><img
+                src="public/img/Logo_UOR.png"
+                width="90px"
+                alt="UÓR Logo"
+                srcset=""
+            /></span>
+            <span class="opacity-80 hover:opacity-100 transition-opacity"
+              ><img
+                src="public/img/logo-cegoc.png"
+                width="90px"
+                alt="CEGOC Logo"
+                srcset=""
+            /></span>
+            <span class="opacity-80 hover:opacity-100 transition-opacity"
+              ><img
+                src="public/img/logo_inv.png"
+                width="70px"
+                alt="Narciso de Moreira Investimentos Logo"
+                srcset=""
+            /></span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-200 dark:bg-slate-800 h-px w-full"></div>
+      <div
+        class="max-w-7xl mx-auto px-8 py-8 flex justify-between items-center text-xs text-slate-500 dark:text-slate-400"
+      >
+        <span>© 2026 Luanda Business School. Site criado por <a class="hover:text-red-700 transition-colors" href="https://www.technologic.co.ao" target="_blank" >Technologic</a></span>
+        <div class="flex gap-6">
+          <a class="hover:text-red-700 transition-colors" href="#"
+            >Privacidade</a
+          >
+          <a class="hover:text-red-700 transition-colors" href="#">Termos</a>
+        </div>
+      </div>
+    </footer>
+    <!-- WhatsApp Floating Action Button -->
+    <a
+      class="fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300"
+      href="https://wa.me/244975628176"
+    >
+      <svg
+        class="w-8 h-8"
+        fill="currentColor"
+        viewbox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.675 1.439 5.662 1.439h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        ></path>
+      </svg>
+    </a>
+  </body>
+</html>
