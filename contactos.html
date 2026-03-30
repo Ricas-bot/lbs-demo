@@ -1,482 +1,316 @@
 <!doctype html>
-
 <html lang="pt">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Luanda Business School | Contactos</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-surface": "#091d2e",
-              "primary-container": "#e02923",
-              "on-tertiary-fixed-variant": "#504700",
-              "outline-variant": "#e6bdb7",
-              "on-tertiary-container": "#484000",
-              "tertiary-fixed": "#fee405",
-              "surface-variant": "#d1e4fb",
-              "surface-container": "#e3efff",
-              "on-primary-fixed": "#410001",
-              background: "#f7f9ff",
-              primary: "#bc000b",
-              "on-background": "#091d2e",
-              "on-secondary-fixed": "#002106",
-              "surface-tint": "#bf050e",
-              "secondary-container": "#80f98b",
-              "on-tertiary-fixed": "#201c00",
-              "inverse-primary": "#ffb4aa",
-              "on-primary-container": "#fffbff",
-              "tertiary-fixed-dim": "#dfc700",
-              "on-secondary-fixed-variant": "#00531a",
-              "secondary-fixed-dim": "#66df75",
-              "surface-container-high": "#d9eaff",
-              "on-secondary": "#ffffff",
-              "secondary-fixed": "#83fc8e",
-              "inverse-on-surface": "#e8f2ff",
-              outline: "#916f6a",
-              "on-surface-variant": "#5d3f3c",
-              "on-primary": "#ffffff",
-              secondary: "#006e25",
-              "surface-bright": "#f7f9ff",
-              "surface-container-lowest": "#ffffff",
-              "error-container": "#ffdad6",
-              "primary-fixed-dim": "#ffb4aa",
-              "on-error": "#ffffff",
-              "on-error-container": "#93000a",
-              surface: "#f7f9ff",
-              "surface-container-highest": "#d1e4fb",
-              error: "#ba1a1a",
-              "surface-container-low": "#edf4ff",
-              "on-secondary-container": "#007327",
-              "inverse-surface": "#203243",
-              tertiary: "#6b5f00",
-              "tertiary-container": "#c0ac00",
-              "surface-dim": "#c9dcf3",
-              "primary-fixed": "#ffdad5",
-              "on-tertiary": "#ffffff",
-              "on-primary-fixed-variant": "#930006",
-            },
-            fontFamily: {
-              headline: ["Manrope"],
-              body: ["Inter"],
-              label: ["Inter"],
-            },
-            borderRadius: {
-              DEFAULT: "0.125rem",
-              lg: "0.25rem",
-              xl: "0.5rem",
-              full: "0.75rem",
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 400,
-          "GRAD" 0,
-          "opsz" 24;
-      }
-      .glass-nav {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(20px);
-      }
-    </style>
+    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/contactos.css">
   </head>
-  <body class="bg-surface font-body text-on-surface">
-    <!-- TopAppBar -->
-    <header
-      class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-full mt-4 mx-auto max-w-7xl w-[95%] shadow-[0_8px_32px_rgba(9,29,46,0.06)]"
-    >
-      <div class="flex items-center gap-2">
-        <span
-          class="text-xl font-black text-slate-900 dark:text-white uppercase tracking-tighter"
-          ><img src="public/img/logo_lbs.png" width="100px" alt="Logo LBS"
-        /></span>
-      </div>
-      <nav class="hidden md:flex items-center gap-8">
-        <a
-          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
-          href="index.html"
-          >Início</a
-        >
-        <a
-          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
-          href="#"
-          >Cursos</a
-        >
-        <a
-          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
-          href="#"
-          >Consultoria</a
-        >
-        <a
-          class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 transition-colors"
-          href="#"
-          >Sobre Nós</a
-        >
-        <a
-          class="font-['Manrope'] font-bold tracking-tight text-sm text-red-700 dark:text-red-500 border-b-2 border-red-700 pb-1"
-          href="contactos.html"
-          >Contactos</a
-        >
-      </nav>
-      <button
-        class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-headline font-bold text-sm scale-95 active:scale-90 duration-200 shadow-lg shadow-primary/20"
-      >
-        Inscreva-se
-      </button>
-    </header>
-    <main class="pt-32 pb-20 px-6">
-      <div class="max-w-7xl mx-auto">
-        <!-- Hero Header Section -->
-        <div class="mb-16">
-          <span
-            class="text-primary font-headline font-extrabold tracking-widest text-xs uppercase mb-4 block"
-            >Fale Connosco</span
-          >
-          <h1
-            class="text-5xl md:text-6xl font-headline font-black text-on-surface tracking-tighter max-w-2xl leading-tight"
-          >
-            Estamos aqui para <span class="text-primary">impulsionar</span> a
-            sua carreira.
-          </h1>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Início</a>
+      <a href="#">Cursos</a>
+      <a href="#">Consultoria</a>
+      <a href="#">Sobre Nós</a>
+      <a href="contactos.html" class="active">Contactos</a>
+    </div>
+
+    <!-- Nav -->
+    <header class="nav">
+      <div class="nav-inner" id="navInner">
+        <div class="nav-logo"><img src="public/img/logo_lbs.png" alt="LBS Logo" /></div>
+        <nav class="nav-links">
+          <a href="index.html">Início</a>
+          <a href="#">Cursos</a>
+          <a href="#">Consultoria</a>
+          <a href="#">Sobre Nós</a>
+          <a href="contactos.html" class="active">Contactos</a>
+        </nav>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <button class="nav-cta">Inscreva-se</button>
+          <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
-        <!-- Bento Contact Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          <!-- Left: Contact Details & Map -->
-          <div class="lg:col-span-5 space-y-8">
-            <!-- Info Card -->
-            <div
-              class="bg-surface-container-lowest p-8 rounded-full shadow-[0_32px_48px_rgba(9,29,46,0.04)]"
-            >
-              <h3 class="font-headline font-bold text-xl mb-8">
-                Informações de Contacto
-              </h3>
-              <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                  <div
-                    class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0"
-                  >
-                    <span class="material-symbols-outlined">call</span>
-                  </div>
-                  <div>
-                    <p
-                      class="text-xs font-label font-semibold text-on-surface-variant uppercase tracking-wider mb-1"
-                    >
-                      Africell
-                    </p>
-                    <p class="text-lg font-headline font-bold text-on-surface">
-                      +244 955 504 890
-                    </p>
-                  </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <div class="header-label">Fale Connosco</div>
+        <h1>Estamos aqui para<br/><em>impulsionar</em><br/>a sua carreira.</h1>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left: Info -->
+          <div class="info-panel">
+            <div class="info-card reveal">
+              <div class="info-card-title">Informações de Contacto</div>
+              <div class="contact-item">
+                <div class="contact-icon red">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
-                <div class="flex items-start gap-4">
-                  <div
-                    class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary flex-shrink-0"
-                  >
-                    <span
-                      class="material-symbols-outlined"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >chat</span
-                    >
-                  </div>
-                  <div>
-                    <p
-                      class="text-xs font-label font-semibold text-on-surface-variant uppercase tracking-wider mb-1"
-                    >
-                      WhatsApp
-                    </p>
-                    <p class="text-lg font-headline font-bold text-on-surface">
-                      +244 975 628 176
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div
-                    class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0"
-                  >
-                    <span class="material-symbols-outlined">mail</span>
-                  </div>
-                  <div>
-                    <p
-                      class="text-xs font-label font-semibold text-on-surface-variant uppercase tracking-wider mb-1"
-                    >
-                      E-mail
-                    </p>
-                    <p class="text-lg font-headline font-bold text-on-surface">
-                      info@lbs.co.ao
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div
-                    class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0"
-                  >
-                    <span class="material-symbols-outlined">location_on</span>
-                  </div>
-                  <div>
-                    <p
-                      class="text-xs font-label font-semibold text-on-surface-variant uppercase tracking-wider mb-1"
-                    >
-                      Localização
-                    </p>
-                    <p class="text-base font-body text-on-surface leading-snug">
-                      Campus Universitário Óscar Ribas 4.º Andar, Talatona –
-                      Luanda
-                    </p>
-                  </div>
+                <div>
+                  <div class="contact-info-label">Africell</div>
+                  <div class="contact-info-value"><a href="tel:+244955504890">+244 955 504 890</a></div>
                 </div>
               </div>
-              <!-- WhatsApp CTA -->
-              <div class="mt-10">
-                <a
-                  class="flex items-center justify-center gap-3 bg-secondary text-white font-headline font-bold py-4 px-6 rounded-full w-full shadow-lg hover:shadow-secondary/20 transition-all active:scale-95"
-                  href="https://wa.me/244975628176"
-                >
-                  <span
-                    class="material-symbols-outlined"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >chat</span
-                  >
-                  Fale connosco via WhatsApp
-                </a>
+              <div class="contact-item">
+                <div class="contact-icon green">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.675 1.439 5.662 1.439h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">WhatsApp</div>
+                  <div class="contact-info-value"><a href="https://wa.me/244975628176">+244 975 628 176</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon red">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">E-mail</div>
+                  <div class="contact-info-value"><a href="mailto:info@lbs.co.ao">info@lbs.co.ao</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon red">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Localização</div>
+                  <div class="contact-info-value" style="font-size: 14px; font-weight: 600; line-height: 1.5;">Campus Universitário Óscar Ribas<br/>4.º Andar, Talatona – Luanda</div>
+                </div>
               </div>
             </div>
-            <!-- Map Section -->
-            <div
-              class="h-64 rounded-full overflow-hidden relative group bg-surface-container-low"
-            >
-              <div
-                class="absolute inset-0 bg-slate-200 grayscale contrast-125 opacity-50 group-hover:grayscale-0 transition-all duration-700"
-                data-alt="Modern architectural map view of a tech-heavy urban business district in Talatona Luanda with soft sunlight"
-                data-location="Luanda"
-                style="
-                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDeUfGxWcyz3Yj9elilsVeH6EOSHfblOFREdop-aTE5RCMELZmtB1pN3Guylc9w82HUvr9DximL0NCTvl1zMhWJ_5O-pamMBbG6zelfK8IzFgdjjFZsYMjceYzKjKRd3BYpW8uBqWgp-iDuN_6iZachPaNYKGSvth7SVbx8DlQDG-3KVX4SSC-aWSBbrkyKWNzvPj7urGTnkUS62aJHYp90PYvKq3C-zfKeilPxDmvcddizBIWbEmWN_x4scwlyecYZSNLmXfXlD0hg&quot;);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div
-                  class="bg-primary p-3 rounded-full shadow-2xl animate-bounce"
-                >
-                  <span
-                    class="material-symbols-outlined text-white"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >location_on</span
-                  >
+
+            <!-- WhatsApp Card -->
+            <a class="wa-btn reveal reveal-delay-1" href="https://wa.me/244975628176">
+              <div class="wa-btn-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.675 1.439 5.662 1.439h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </div>
+              <div>
+                <div class="wa-btn-label">Fale connosco via WhatsApp</div>
+                <div class="wa-btn-sub">Resposta em menos de 2 horas</div>
+              </div>
+              <div class="wa-arrow">
+                <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </a>
+
+            <!-- Map Card -->
+            <div class="map-card reveal reveal-delay-2" onclick="window.open('https://maps.google.com/?q=Talatona+Luanda+Angola','_blank')">
+              <div class="map-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeUfGxWcyz3Yj9elilsVeH6EOSHfblOFREdop-aTE5RCMELZmtB1pN3Guylc9w82HUvr9DximL0NCTvl1zMhWJ_5O-pamMBbG6zelfK8IzFgdjjFZsYMjceYzKjKRd3BYpW8uBqWgp-iDuN_6iZachPaNYKGSvth7SVbx8DlQDG-3KVX4SSC-aWSBbrkyKWNzvPj7urGTnkUS62aJHYp90PYvKq3C-zfKeilPxDmvcddizBIWbEmWN_x4scwlyecYZSNLmXfXlD0hg');"></div>
+              <div class="map-overlay">
+                <div class="map-pin">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3" fill="rgba(0,0,0,0.3)"/></svg>
                 </div>
               </div>
-              <div
-                class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow-sm"
-              >
-                <p class="text-xs font-headline font-bold text-on-surface">
-                  Talatona, Luanda
-                </p>
+              <div class="map-label">
+                <svg width="14" height="14" fill="none" stroke="var(--red)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Talatona, Luanda · Ver no mapa →</span>
               </div>
             </div>
           </div>
-          <!-- Right: Contact Form -->
-          <div
-            class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-full"
-          >
-            <h3 class="font-headline font-black text-3xl mb-2">
-              Envie uma mensagem
-            </h3>
-            <p class="text-on-surface-variant mb-10 max-w-lg">
-              Tem alguma dúvida sobre os nossos cursos ou serviços de
-              consultoria? A nossa equipa responderá o mais breve possível.
-            </p>
-            <form class="space-y-6">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="space-y-1">
-                  <label
-                    class="text-xs font-label font-bold text-on-surface-variant uppercase tracking-wider ml-1"
-                    >Nome Completo</label
-                  >
-                  <input
-                    class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-4 py-4 rounded-xl transition-all outline-none"
-                    placeholder="Ex: João Silva"
-                    type="text"
-                  />
-                </div>
-                <div class="space-y-1">
-                  <label
-                    class="text-xs font-label font-bold text-on-surface-variant uppercase tracking-wider ml-1"
-                    >Email</label
-                  >
-                  <input
-                    class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-4 py-4 rounded-xl transition-all outline-none"
-                    placeholder="nome@exemplo.ao"
-                    type="email"
-                  />
+
+          <!-- Right: Form -->
+          <div class="form-panel reveal reveal-delay-1">
+            <div id="formContent">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+                <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--red);letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;gap:8px;">
+                  <span style="width:20px;height:1px;background:var(--red);display:block;"></span>
+                  Formulário de Contacto
                 </div>
               </div>
-              <div class="space-y-1">
-                <label
-                  class="text-xs font-label font-bold text-on-surface-variant uppercase tracking-wider ml-1"
-                  >Assunto</label
-                >
-                <input
-                  class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-4 py-4 rounded-xl transition-all outline-none"
-                  placeholder="Como podemos ajudar?"
-                  type="text"
-                />
+              <h2 class="form-title">Envie uma mensagem</h2>
+              <p class="form-sub">Tem dúvidas sobre os nossos cursos ou serviços? A nossa equipa responderá em menos de 24 horas.</p>
+
+              <div class="form-grid">
+                <div class="form-grid form-grid-2" style="grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="field">
+                    <label class="field-label">Nome Completo</label>
+                    <input class="field-input" type="text" placeholder="Ex: João Silva" id="inputName" />
+                  </div>
+                  <div class="field">
+                    <label class="field-label">Email</label>
+                    <input class="field-input" type="email" placeholder="nome@exemplo.ao" id="inputEmail" />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label">Empresa / Organização</label>
+                  <input class="field-input" type="text" placeholder="Nome da sua empresa" id="inputCompany" />
+                </div>
+                <div>
+                  <div class="topics-label">Assunto</div>
+                  <div class="topics-row" id="topicPills">
+                    <div class="topic-pill selected" data-value="cursos">Informação sobre Cursos</div>
+                    <div class="topic-pill" data-value="inscricao">Inscrição</div>
+                    <div class="topic-pill" data-value="consultoria">Consultoria</div>
+                    <div class="topic-pill" data-value="parceria">Parceria Empresarial</div>
+                    <div class="topic-pill" data-value="outro">Outro</div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label">Mensagem</label>
+                  <textarea class="field-input" id="inputMessage" placeholder="Escreva aqui a sua mensagem..."></textarea>
+                </div>
+                <div>
+                  <button class="submit-btn" id="submitBtn" type="button">
+                    <span>Enviar Pedido</span>
+                    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+                  </button>
+                </div>
               </div>
-              <div class="space-y-1">
-                <label
-                  class="text-xs font-label font-bold text-on-surface-variant uppercase tracking-wider ml-1"
-                  >Mensagem</label
-                >
-                <textarea
-                  class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-4 py-4 rounded-xl transition-all outline-none resize-none"
-                  placeholder="Escreva aqui a sua mensagem detalhada..."
-                  rows="6"
-                ></textarea>
+            </div>
+
+            <!-- Success State -->
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
               </div>
-              <div class="pt-4">
-                <button
-                  class="bg-gradient-to-br from-primary to-primary-container text-white font-headline font-black py-5 px-10 rounded-full shadow-[0_16px_32px_rgba(188,0,11,0.2)] hover:shadow-[0_24px_48px_rgba(188,0,11,0.3)] transition-all flex items-center gap-3"
-                  type="submit"
-                >
-                  Enviar Pedido
-                  <span class="material-symbols-outlined">send</span>
-                </button>
-              </div>
-            </form>
+              <div class="success-title">Mensagem enviada!</div>
+              <p class="success-text">Obrigado pelo seu contacto. A nossa equipa responderá em breve.<br/>Entretanto, pode falar connosco via WhatsApp.</p>
+              <a href="https://wa.me/244975628176" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:white;font-family:'Syne',sans-serif;font-weight:700;font-size:14px;padding:14px 24px;border-radius:9999px;text-decoration:none;margin-top:24px;">WhatsApp →</a>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <!-- Footer -->
-    <footer class="bg-slate-100 dark:bg-slate-950">
-      <div class="bg-slate-200 dark:bg-slate-800 h-px w-full"></div>
-      <div
-        class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto font-['Inter'] text-sm leading-relaxed"
-      >
-        <div class="flex flex-col gap-6">
-          <span class="text-lg font-bold text-slate-900 dark:text-white"
-            ><img src="public/img/logo_lbs.png" width="200px" alt="Logo LBS"
-          /></span>
-          <p class="text-slate-500 dark:text-slate-400">
-            Excelência na formação de executivos em Angola, transformando o
-            futuro das organizações.
-          </p>
-        </div>
-        <div class="flex flex-col gap-4">
-          <h4
-            class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs"
-          >
-            Localização
-          </h4>
-          <p class="text-slate-500 dark:text-slate-400">
-            Campus Universitário Óscar Ribas 4.º Andar, Talatona – Luanda
-          </p>
-        </div>
-        <div class="flex flex-col gap-4">
-          <h4
-            class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs"
-          >
-            Contactos
-          </h4>
-          <a
-            class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity"
-            href="tel:+244955504890"
-            >Tel: +244 955 504 890</a
-          >
-          <a
-            class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity"
-            href="https://wa.me/244975628176"
-            >WhatsApp: +244 975 628 176</a
-          >
-          <a
-            class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-opacity underline underline-offset-4 decoration-red-500"
-            href="mailto:info@lbs.co.ao"
-            >Email: info@lbs.co.ao</a
-          >
-        </div>
-        <div class="flex flex-col gap-4">
-          <h4
-            class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs"
-          >
-            Parceiros
-          </h4>
-          <div
-            class="grid grid-cols-2 gap-4 text-xs font-semibold text-slate-500 dark:text-slate-400"
-          >
-            <span class="opacity-80 hover:opacity-100 transition-opacity"
-              ><img
-                src="public/img/Logo_UOR.png"
-                width="90px"
-                alt="UÓR Logo"
-                srcset=""
-            /></span>
-            <span class="opacity-80 hover:opacity-100 transition-opacity"
-              ><img
-                src="public/img/logo-cegoc.png"
-                width="90px"
-                alt="CEGOC Logo"
-                srcset=""
-            /></span>
-            <span class="opacity-80 hover:opacity-100 transition-opacity"
-              ><img
-                src="public/img/logo_inv.png"
-                width="70px"
-                alt="Narciso de Moreira Investimentos Logo"
-                srcset=""
-            /></span>
+
+    <!-- Social Strip -->
+    <div class="social-strip">
+      <div class="container">
+        <div class="social-inner">
+          <div class="social-text">Siga-nos nas redes sociais</div>
+          <div class="social-icons">
+            <a class="social-icon" href="#" aria-label="Instagram">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a class="social-icon" href="#" aria-label="LinkedIn">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="social-icon" href="#" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
           </div>
         </div>
       </div>
-      <div class="bg-slate-200 dark:bg-slate-800 h-px w-full"></div>
-      <div
-        class="max-w-7xl mx-auto px-8 py-8 flex justify-between items-center text-xs text-slate-500 dark:text-slate-400"
-      >
-        <span>© 2026 Luanda Business School. Site criado por <a class="hover:text-red-700 transition-colors" href="https://www.technologic.co.ao" target="_blank" >Technologic</a></span>
-        <div class="flex gap-6">
-          <a class="hover:text-red-700 transition-colors" href="#"
-            >Privacidade</a
-          >
-          <a class="hover:text-red-700 transition-colors" href="#">Termos</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img src="public/img/logo_lbs.png" alt="LBS" style="height: 36px; filter: brightness(0) invert(1) opacity(0.7);" />
+            <p>Excelência na formação de executivos em Angola.</p>
+            <div class="footer-partners">
+              <img src="public/img/Logo_UOR.png" alt="UOR" />
+              <img src="public/img/logo-cegoc.png" alt="CEGOC" />
+              <img src="public/img/logo_inv.png" alt="NMI" />
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Programas</div>
+            <a href="#">Liderança e Estratégia</a>
+            <a href="#">Finanças Corporativas</a>
+            <a href="#">Recursos Humanos</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Contactos</div>
+            <a href="tel:+244955504890">+244 955 504 890</a>
+            <a href="https://wa.me/244975628176">+244 975 628 176</a>
+            <a href="mailto:info@lbs.co.ao">info@lbs.co.ao</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Localização</div>
+            <p>Campus Universitário Óscar Ribas</p>
+            <p>4.º Andar, Talatona – Luanda</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Luanda Business School. Site por <a href="https://www.technologic.co.ao" target="_blank" style="color:rgba(255,255,255,0.5)">Technologic</a></span>
+          <div class="footer-links">
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+          </div>
         </div>
       </div>
     </footer>
-    <!-- WhatsApp Floating Action Button -->
-    <a
-      class="fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300"
-      href="https://wa.me/244975628176"
-    >
-      <svg
-        class="w-8 h-8"
-        fill="currentColor"
-        viewbox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.675 1.439 5.662 1.439h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-        ></path>
-      </svg>
+
+    <!-- FAB -->
+    <a class="fab" href="https://wa.me/244975628176" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.675 1.439 5.662 1.439h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </a>
 
+    <script>
+      // Progress bar
+      const bar = document.getElementById('progressBar');
+      window.addEventListener('scroll', () => {
+        bar.style.width = (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + '%';
+      });
+
+      // Nav scroll
+      const navInner = document.getElementById('navInner');
+      window.addEventListener('scroll', () => navInner.classList.toggle('scrolled', window.scrollY > 60));
+
+      // Hamburger
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+      });
+
+      // Reveal
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Topic Pills
+      document.getElementById('topicPills').addEventListener('click', e => {
+        const pill = e.target.closest('.topic-pill');
+        if (pill) {
+          document.querySelectorAll('.topic-pill').forEach(p => p.classList.remove('selected'));
+          pill.classList.add('selected');
+        }
+      });
+
+      // Form submit
+      document.getElementById('submitBtn').addEventListener('click', () => {
+        const name = document.getElementById('inputName').value.trim();
+        const email = document.getElementById('inputEmail').value.trim();
+        const msg = document.getElementById('inputMessage').value.trim();
+        if (!name || !email || !msg) {
+          // Simple shake animation
+          ['inputName','inputEmail','inputMessage'].forEach(id => {
+            const el = document.getElementById(id);
+            if (!el.value.trim()) {
+              el.style.borderColor = 'var(--red)';
+              el.style.background = 'rgba(200,0,26,0.03)';
+              setTimeout(() => { el.style.borderColor = ''; el.style.background = ''; }, 2000);
+            }
+          });
+          return;
+        }
+        document.getElementById('formContent').style.opacity = '0';
+        document.getElementById('formContent').style.transform = 'translateY(-20px)';
+        document.getElementById('formContent').style.transition = 'all 0.4s ease';
+        setTimeout(() => {
+          document.getElementById('formContent').style.display = 'none';
+          document.getElementById('formSuccess').classList.add('show');
+        }, 400);
+      });
+    </script>
   </body>
 </html>
