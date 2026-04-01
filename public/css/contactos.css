@@ -16,6 +16,8 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-full: 9999px;
+  --title-font: "Montserrat", sans-serif;
+  --body-font: "DM Sans", sans-serif;
 }
 
 *,
@@ -30,7 +32,7 @@ html {
 }
 body {
   background: var(--surface);
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--body-font);
   color: var(--text);
   overflow-x: hidden;
 }
@@ -110,7 +112,7 @@ body::before {
   }
 }
 .nav-links a {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 600;
   font-size: 13px;
   color: var(--text-muted);
@@ -136,7 +138,7 @@ body::before {
 .nav-cta {
   background: var(--red);
   color: white;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 13px;
   border: none;
@@ -205,7 +207,7 @@ body::before {
   pointer-events: all;
 }
 .mobile-menu a {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 36px;
   color: white;
@@ -270,10 +272,12 @@ body::before {
 /* ─── PAGE HEADER ─── */
 .page-header {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 72px;
   background: var(--dark);
   position: relative;
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 .page-header::before {
   content: "";
@@ -289,18 +293,8 @@ body::before {
   );
   pointer-events: none;
 }
-.page-header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background: var(--surface);
-  clip-path: ellipse(60% 100% at 50% 100%);
-}
 .header-label {
-  font-family: "DM Mono", monospace;
+  font-family: var(--body-font);
   font-size: 11px;
   color: var(--red-light);
   letter-spacing: 0.15em;
@@ -320,7 +314,7 @@ body::before {
   background: var(--red-light);
 }
 .page-header h1 {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: clamp(36px, 7vw, 72px);
   color: white;
@@ -373,7 +367,7 @@ main {
   transform: translateY(-2px);
 }
 .info-card-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 18px;
   margin-bottom: 28px;
@@ -421,7 +415,7 @@ main {
   margin-bottom: 4px;
 }
 .contact-info-value {
-  font-family: "Syne", sans-serif;
+  font-family: var(--body-font);
   font-weight: 700;
   font-size: 16px;
   color: var(--text);
@@ -472,7 +466,7 @@ main {
   fill: white;
 }
 .wa-btn-label {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 15px;
 }
@@ -561,7 +555,7 @@ main {
   gap: 8px;
 }
 .map-label span {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 13px;
   color: var(--text);
@@ -581,7 +575,7 @@ main {
   }
 }
 .form-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: clamp(24px, 3vw, 36px);
   letter-spacing: -0.02em;
@@ -622,7 +616,7 @@ main {
   border: 2px solid transparent;
   border-radius: var(--radius-md);
   padding: 16px 18px;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--body-font);
   font-size: 15px;
   color: var(--text);
   outline: none;
@@ -659,7 +653,7 @@ textarea.field-input {
   padding: 8px 18px;
   border-radius: var(--radius-full);
   border: 1.5px solid rgba(0, 0, 0, 0.1);
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 600;
   font-size: 13px;
   color: var(--text-muted);
@@ -684,7 +678,7 @@ textarea.field-input {
   gap: 12px;
   background: var(--dark);
   color: white;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 15px;
   padding: 18px 32px;
@@ -766,7 +760,7 @@ textarea.field-input {
   stroke: var(--green);
 }
 .success-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 28px;
   margin-bottom: 12px;
@@ -795,7 +789,7 @@ textarea.field-input {
   }
 }
 .social-text {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 18px;
   color: white;
@@ -853,7 +847,7 @@ footer {
   max-width: 240px;
 }
 .footer-col-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.3);

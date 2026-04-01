@@ -16,6 +16,8 @@
   --radius-lg: 24px;
   --radius-xl: 40px;
   --radius-full: 9999px;
+  --title-font: "Montserrat", sans-serif;
+  --body-font: "DM Sans", sans-serif;
 }
 
 *,
@@ -32,7 +34,7 @@ html {
 
 body {
   background: var(--surface);
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--body-font);
   color: var(--text);
   overflow-x: hidden;
 }
@@ -116,7 +118,7 @@ body::before {
   }
 }
 .nav-links a {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 600;
   font-size: 13px;
   color: var(--text-muted);
@@ -142,7 +144,7 @@ body::before {
 .nav-cta {
   background: var(--red);
   color: white;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 13px;
   border: none;
@@ -217,7 +219,7 @@ body::before {
   pointer-events: all;
 }
 .mobile-menu a {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 36px;
   color: white;
@@ -334,7 +336,7 @@ body::before {
   text-transform: uppercase;
 }
 .hero h1 {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: clamp(36px, 8vw, 88px);
   color: white;
@@ -374,7 +376,7 @@ body::before {
   gap: 10px;
   background: var(--red);
   color: white;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 14px;
   padding: 16px 28px;
@@ -400,7 +402,7 @@ body::before {
   gap: 10px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 600;
   font-size: 14px;
   padding: 16px 28px;
@@ -433,7 +435,7 @@ body::before {
   animation: fadeUp 0.8s 0.8s forwards;
 }
 .hero-stat-value {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 28px;
   color: white;
@@ -555,7 +557,7 @@ body::before {
   align-items: center;
   gap: 20px;
   padding: 0 32px;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.9);
@@ -651,7 +653,7 @@ body::before {
   opacity: 0.25;
 }
 .card-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 24px;
   margin-bottom: 16px;
@@ -669,7 +671,7 @@ body::before {
   gap: 40px;
 }
 .stat-value {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 40px;
   color: var(--red);
@@ -706,7 +708,7 @@ body::before {
   }
 }
 .section-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: clamp(28px, 4vw, 44px);
   letter-spacing: -0.02em;
@@ -720,7 +722,7 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 13px;
   color: var(--red);
@@ -811,13 +813,14 @@ body::before {
 }
 
 .course-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 12px;
   letter-spacing: -0.01em;
 }
 .course-desc {
+  font-family: var(--body-font);
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.7;
@@ -831,7 +834,7 @@ body::before {
   padding: 14px 20px;
   border-radius: var(--radius-md);
   background: var(--surface-alt);
-  font-family: "Syne", sans-serif;
+  font-family: var(--body-font);
   font-weight: 700;
   font-size: 13px;
   color: var(--text);
@@ -885,7 +888,7 @@ body::before {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }
 .why-number {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 56px;
   color: rgba(0, 0, 0, 0.09);
@@ -927,7 +930,7 @@ body::before {
   color: #2563eb;
 }
 .why-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 17px;
   margin-bottom: 10px;
@@ -1016,7 +1019,7 @@ body::before {
   text-align: center;
 }
 .cta-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: clamp(28px, 4vw, 52px);
   color: white;
@@ -1053,7 +1056,7 @@ body::before {
   }
 }
 .social-text {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 18px;
   color: white;
@@ -1111,7 +1114,7 @@ footer {
   max-width: 240px;
 }
 .footer-col-title {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.3);
@@ -1219,7 +1222,7 @@ footer {
   flex-wrap: wrap;
 }
 .countdown-text {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-size: 13px;
   font-weight: 700;
   color: var(--gold);
@@ -1235,7 +1238,7 @@ footer {
   text-align: center;
 }
 .countdown-num {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 22px;
   color: var(--text);
@@ -1248,7 +1251,7 @@ footer {
   letter-spacing: 0.08em;
 }
 .countdown-sep {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 20px;
   color: var(--gold);
@@ -1307,14 +1310,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 800;
   font-size: 14px;
   color: var(--red);
   flex-shrink: 0;
 }
 .author-name {
-  font-family: "Syne", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 14px;
 }
